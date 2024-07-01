@@ -12,7 +12,7 @@
 	</listeners>
 	
 	
-	 <test name="Open Cart App Test">
+	 <test name="Open Cart App Test"> 
 		<parameter name="browser" value="chrome" />
 		<parameter name="url"
 			value="https://naveenautomationlabs.com/opencart/index.php?route=account/register" />

@@ -22,6 +22,7 @@ import com.qa.opencart.errors.AppErrors;
 public class DriverFactory {
 	WebDriver driver;
 	Properties prop;
+	
 
 	/**
 	 * This is used to init the driver on the basis on given browser name.
