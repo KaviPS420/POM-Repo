@@ -18,6 +18,7 @@ import com.qa.opencart.Exceptions.BrowserExceptions;
 import com.qa.opencart.Exceptions.FrameworkException;
 import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.errors.AppErrors;
+import com.qa.opencart.logger.Log;
 
 public class DriverFactory {
 	WebDriver driver;
@@ -59,7 +60,8 @@ public class DriverFactory {
 			break;
 
 		default:
-			System.out.println("plz pass the right browser name..." + browserName);
+			//System.out.println("plz pass the right browser name..." + browserName);
+			Log.error("Please pass the correct browser Name" + browserName);
 			throw new BrowserExceptions(AppErrors.BROWSER_NOT_FOUND);
 		}
 
